@@ -1,0 +1,267 @@
+.margin-0{
+	margin: 0;
+}
+.container{
+	margin: auto;
+	width: 1000px;
+	height: 650px;
+	display: flex;
+}
+.form {
+	width: 400px;
+	background-image: url("dark_background.png");
+	background-repeat:no-repeat ;
+	background-size: 100% 100%;
+	
+}
+.overplay-form{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0);
+	opacity: .88;
+	position: relative;
+}
+
+.logo{
+	position: absolute;
+	width: 100px;
+	top: 75px;
+	left: 145px;
+}
+.title-form{
+	position: absolute;
+	color: white;
+	top: 200px;
+	width: 100%;
+	text-align: center;
+	font-family: tahoma;
+}
+.form-content{
+	position: absolute;
+	top: 250px;
+	left: 85px;
+	color: whitesmoke;
+	font-family: tahoma;
+	font-size: 12px;
+}
+
+.form-content .nhap{
+	width: 215px;
+	height: 30px;
+	border-radius: 3px;
+	border: none;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	background-color: #454546;
+	color: rgb(255, 255, 255);
+	padding-left: 15px;
+	display: block;
+	outline: none;
+}
+.form-content .nhap .nhapPass{
+	background-color: #454546;
+    line-height: 25px;
+    border: none;
+	margin-right: 25px;
+	outline: none;
+}
+.eye{
+	color:rgb(255, 255, 255);
+}
+.checkbox {
+    width: 50%;
+    margin: 0px auto 15px auto;
+    position: relative;
+    display: block;
+}
+
+.checkbox input[type="checkbox"] {
+    opacity: 0.00000001;
+    position: absolute;
+    left: 0;
+}
+.checkbox label {
+    position: relative;
+}
+.checkbox label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 4px;
+    width: 15px;
+    height: 15px;
+    transition: transform 0.28s ease;
+    border-radius: 3px;
+	border: 2px solid #7f817e;
+	background: none;
+}
+.checkbox label:after {
+    content: '';
+    width: 8px;
+    height: 3px;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    transform: rotate(-45deg) scale(0);
+    transition: transform ease 0.25s;
+    will-change: transform;
+	position: absolute;
+    top: 10px;
+    left: 9px;
+}
+
+.checkbox input[type="checkbox"]:checked ~ label::before {
+	background-color: #19d242;
+	border: solid #19d24f 2px;
+}
+
+.checkbox input[type="checkbox"]:checked ~ label::after {
+	transform: rotate(-45deg) scale(1);
+	
+}
+
+.checkbox label {
+    min-height: 34px;
+    display: block;
+    padding-left: 30px;
+    
+}
+.checkbox label span {
+    position: absolute;
+    top: 40%;
+    /* -webkit-transform: translateY(-50%); */
+    transform: translateY(-50%);
+}
+.Dangnhap{
+	width: 230px;
+	height: 30px;
+	background-color: #19d242;
+	border-radius: 3px;
+	border: none;
+	color: whitesmoke;
+	margin-top: 30px;
+}
+.form-content p a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #147e2c;
+}
+form{
+	position: relative;
+}
+.ho_Tro{
+	position: absolute;
+	left: 40px;
+    margin-top: 40px;
+	width: 145px;
+	height: 30px;
+	background: none;
+	border: solid green 1px;
+	line-height: 30px;
+	text-align: center;
+}
+.ho_Tro:hover{
+	background:#19d242;
+}
+.ho_Tro:hover a{
+	color: honeydew;
+}
+.ho_Tro a{
+	text-decoration: none;
+	font-weight: bold;
+	color:  #147e2c;
+}
+.dot{
+	width: 12px;
+	height: 12px;
+	background-color: white;
+	display: inline-block;
+	border-radius: 50%;
+	margin-right: 7px;
+	margin-left: 7px;
+}
+.dots{
+	position:absolute;
+	bottom: 90px;
+	width: 100%;
+	text-align: center;
+	height: 15px;
+}
+#remember{
+	background-color: green;
+}
+
+#button_dangNhap{
+	position: relative;
+}
+.loader {
+	border: 3px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 3px solid #0cdb2e;
+	width: 10px;
+	height: 10px;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+	position: absolute;
+	top: 37px;
+	left: 105px;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+  .overplay{
+	width: 100%;
+	height: 100%;
+	background-color:rgb(8, 185, 8);
+	opacity: 0.5;
+}
+
+.slideShow{
+	background: none;
+	width: 600px;
+	height: 100%;
+}
+  .slide{
+	background-image: url("golfer_background.png");
+	/* background-size: contain; */
+	width: 600px;
+	background-repeat:no-repeat ;
+	background-size: 100% 100%;
+	position: relative;
+	overflow: hidden;
+}
+.content{
+	position: absolute;
+	color: rgb(255, 255, 255);
+	bottom: 21%;
+	width: 2400px;
+	transition: all 1s;
+}
+.title-Slide{
+	font-size: 21px;
+	font-family:tahoma;
+	padding-left: 145px;
+}
+.text-nho{
+	padding-left: 145px;
+	padding-right: 100px;
+}
+.text-content{
+	float: left;
+	width:600px;
+	text-align: left;
+	/* display: none; */
+}
+.text-nho{
+	font-size: 15px;
+	font-weight: unset;
+}
+
